@@ -49,6 +49,7 @@ systemctl status docker
 
 # Step 3:- Select Application - Python
 _Docker setup is complete. Proceed by choosing your Python application._
+
 _Note:- Pull Application from Github_
 ```bash
 git clone https://github.com/iam-avinash-jagtap/Python-app.git
@@ -139,6 +140,7 @@ _Create a repository on Docker Hub to publicly push your image._
 2. Go to [https://hub.docker.com](https://hub.docker.com)
 3. Log in and click on **Repositories** > **Create Repository**
 4. Name the repository `python-app`
+   
 _Note:- Image name and Docker hub repository name should be same._
 
 ---
@@ -151,6 +153,7 @@ _The setup is almost complete. Now, you can push your image to Docker Hub._
 docker login
 ```
 _Enter you Docker hub Credintials to login._
+
 3. Push the image:
 ```bash
 docker push avi004/python-app
