@@ -51,7 +51,7 @@ systemctl status docker
 _Docker setup is complete. Proceed by choosing your Python application._
 _Note:- Pull Application from Github_
 ```bash
-git pull https://github.com/iam-avinash-jagtap/python-app.git
+git clone https://github.com/iam-avinash-jagtap/Python-app.git
 ```
 - The application selected is a **Python-app** web application.
 - Ensure your application is in a folder with `app.py` is ready.
@@ -114,10 +114,11 @@ docker ps
 _The container is running. Now, verify the deployment of your application._
 - The `python-app` will now be live at `http://<EC2-PUBLIC-IP>:5000`
 - Ensure port 5000 is open in the EC2 Security Group.
+  
+  ![Tech-aj-Home](https://github.com/iam-avinash-jagtap/Deploy-Python-Application-Using-Container/blob/master/Images/Tech-aj-Home.png)
+
 
 ---
-
-![Output](link)
 
 # Step 8:- Create Image from Running Container
 _Deployment is complete. Now, create an image from your running container to push to Docker Hub._
@@ -154,6 +155,12 @@ _Enter you Docker hub Credintials to login._
 ```bash
 docker push avi004/python-app
 ```
+---
+
+![Redpository](https://github.com/iam-avinash-jagtap/Deploy-Python-Application-Using-Container/blob/master/Images/Screenshot%202025-04-16%20122307.png)
+
+
+
 #### Your Docker image is now hosted on Docker Hub and can be pulled publicly.
 ---
 
